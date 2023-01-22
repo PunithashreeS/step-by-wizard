@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Step By Wizard</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Step By Wizard</h1>
+     
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+
+        <div
+          class="progress-step progress-step-active"
+          data-title="Basic Info"
+        ></div>
+        <div class="progress-step" data-title="Contact Info"></div>
+        <div class="progress-step" data-title="Birt Info"></div>
+        <div class="progress-step" data-title="User Info"></div>
+      </div>
+
+      
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="First Name">First Name</label>
+          <input type="text" name="Fisrt Name" id="First Name" />
+        </div>
+        <div class="input-group">
+          <label for="Last Name">Last Name</label>
+          <input type="text" name="Last Name" id="Last Name" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="input-group">
+<div class="lable">Gender</div>
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>            
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="User Name">User Name</label>
+          <input type="text" name="User Name" id="User Name" />
+        </div>
+        <div class="input-group">
+          <label for="Password">Password</label>
+          <input type="password" name="Password" id="Password" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+        <script src="script.js" defer></script>
+  </body>
+</html>
